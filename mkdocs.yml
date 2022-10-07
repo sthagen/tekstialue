@@ -1,5 +1,5 @@
 site_name: Tekstialue
-site_description: "Magnetism (Finnish: magnetismi) - another opinionated World Magnetic Model calculator."
+site_description: "Text area (Finnish: tekstialue) - tune planar arrangements of text (tables) to preserve styles across transforms."
 
 theme:
   name: 'material'
