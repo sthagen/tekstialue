@@ -24,7 +24,7 @@ def main(options: argparse.Namespace) -> int:
     log.debug(f'Read {len(lines)} lines from {in_file}')
 
     with open(out_file, 'wt', encoding=ENCODING) as handle:
-        handle.write('\n'.joine(lines) + '\n')
+        handle.write('\n'.join(lines) + '\n')
     log.debug(f'Wrote {len(lines)} lines to {out_file}')
 
     duration_seconds = (dti.datetime.utcnow() - start_time).total_seconds()
