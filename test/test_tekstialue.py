@@ -41,3 +41,7 @@ def test_discover_configuration():
 
 def test_extract_slots():
     assert api.extract_slots([{'start': 0, 'amend': 42}]) == [(0, 42 + 1)]
+
+
+def test_weave_table():
+    assert api.weave_table([''], [], [], '') == ['']
