@@ -4,13 +4,21 @@ import sys
 from typing import List, Union
 
 import tekstialue.tekstialue as api
-from tekstialue import APP_ALIAS, APP_NAME, log
+from tekstialue import APP_ALIAS, APP_NAME, DEFAULT_CONFIG_NAME, log
 
 
 def parse_request(argv: List[str]) -> Union[int, argparse.Namespace]:
     """DRY."""
     parser = argparse.ArgumentParser(
         prog=APP_ALIAS, description=APP_NAME, formatter_class=argparse.RawTextHelpFormatter
+    )
+    parser.add_argument(
+        '--config',
+        '-c',
+        dest='cfg_file',
+        default='',
+        help=f'Configuration file to read column defs from. Optional\n(default: {DEFAULT_CONFIG_NAME})',
+        required=False,
     )
     parser.add_argument(
         '--input',
