@@ -1,0 +1,31 @@
+%%%%%%%%TEST_COVERAGE
+\begin{longtable}[]{@{}
+>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2233}}
+>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.6200}}
+>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0667}}
+>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0900}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+a
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+b
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+c cc
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+d dd
+\end{minipage} \\
+\midrule()
+\endhead
+\href{https://example.com/A-1}{A-1} &
+Blurb & and_that &
+Also_this \\
+\href{https://example.com/A-2}{A-2} &
+Blurb too & and_these &
+Also_those \\
+\bottomrule()
+\end{longtable}
+
+2 issues
+
+\hypertarget{aaa-aaaaaaa}{%
+\subsubsection{Aaaa Aaaadasda}\label{aaa-aaaaaaa}}

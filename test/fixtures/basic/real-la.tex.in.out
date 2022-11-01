@@ -1,0 +1,49 @@
+
+\begin{small}
+\begin{longtable}[]{|
+>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1500}}|
+>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.5500}}|
+>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1500}}|
+>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.2000}}|}
+\hline
+\begin{minipage}[b]{\linewidth}\raggedright
+\ \mbox{\textbf{a}}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\mbox{\textbf{b}}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\mbox{\textbf{c}} \mbox{\textbf{cc}}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\mbox{\textbf{d}} \mbox{\textbf{dd}}
+\end{minipage} \\
+\hline
+\endfirsthead
+\multicolumn{4}{@{}l}{\small \ldots continued}\\\hline
+\hline
+\begin{minipage}[b]{\linewidth}\raggedright
+\ \mbox{\textbf{a}}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\mbox{\textbf{b}}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\mbox{\textbf{c}} \mbox{\textbf{cc}}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\mbox{\textbf{d}} \mbox{\textbf{dd}}
+\end{minipage} \\
+\endhead
+\hline
+\href{https://example.com/A-1}{A-1} &
+Blurb & and_that &
+Also_this \\
+\hline
+\href{https://example.com/A-2}{A-2} &
+Blurb too & and_these &
+Also_those \\
+\hline
+\end{longtable}
+\end{small}
+\vspace*{-2em}
+\begin{footnotesize}
+2 issues
+\end{footnotesize}
+
+\hypertarget{aaa-aaaaaaa}{%
+\subsubsection{Aaaa Aaaadasda}\label{aaa-aaaaaaa}}
