@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tekstialue"
-version = "2022.10.8"
-description = "Magnetism (Finnish: magnetismi) - another opinionated World Magnetic Model calculator."
+version = "2022.11.1"
+description = "Text area (Finnish: tekstialue) - tune planar arrangements of text (tables) to preserve styles across transforms."
 readme = "README.md"
 authors = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
 maintainers = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
@@ -19,7 +19,7 @@ classifiers = [
 ]
 keywords = ["developer-tools", "documentation-tools", "html", "markdown"]
 dependencies = [
-    "pydantic >= 1.10.2",
+    "PyYAML >= 6.0",
     "typer >= 0.6.1",
 ]
 requires-python = ">=3.8"
