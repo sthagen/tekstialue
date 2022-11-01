@@ -69,6 +69,9 @@ TAB_NEW_END = r"""\end{longtable}
 ANNOTATION
 \end{footnotesize}"""
 
+Slots = list[tuple[int, int]]
+TableRanges = list[dict[str, int | list[int]]]
+
 
 @no_type_check
 def discover_configuration(conf: str) -> tuple[int, dict[str, object], str]:
@@ -106,7 +109,7 @@ def discover_configuration(conf: str) -> tuple[int, dict[str, object], str]:
     return 0, configuration, str(cp)
 
 
-def cue_tables(lines: list[str]) -> list[dict[str, int | list[int]]]:
+def cue_tables(lines: list[str]) -> TableRanges:
     """Tag all tables extracting the relevant line information for elements."""
     table_section, head, annotation = False, False, False
     table_ranges = []
@@ -159,7 +162,7 @@ def cue_tables(lines: list[str]) -> list[dict[str, int | list[int]]]:
     return table_ranges
 
 
-def extract_slots(table_ranges: list[dict[str, int | list[int]]]) -> list[tuple[int, int]]:
+def extract_slots(table_ranges: TableRanges) -> Slots:
     """Extract the on and off slots for output processing."""
     on_off_slots = []
     for table in table_ranges:
@@ -171,35 +174,8 @@ def extract_slots(table_ranges: list[dict[str, int | list[int]]]) -> list[tuple[
     return on_off_slots
 
 
-@no_type_check
-def main(options: argparse.Namespace) -> int:
-    """Process the text."""
-    start_time = dti.datetime.utcnow()
-    verbose = options.verbose
-    if verbose:
-        logging.getLogger().setLevel(logging.DEBUG)
-    in_file, out_file = options.in_file, options.out_file
-
-    code, cfg, cp = discover_configuration(options.cfg_file)
-    if code:
-        return code
-    log.info(f'Read configiration from {cp}')
-    log.debug(f'{cfg=}')
-    cols = cfg['columns']
-    tab_hacked_head = TAB_HACKED_HEAD.replace('$COL1$', cols['col_1'][0])
-    tab_hacked_head = tab_hacked_head.replace('$COL2$', cols['col_2'][0])
-    tab_hacked_head = tab_hacked_head.replace('$COL3_A$', cols['col_3'][0])
-    tab_hacked_head = tab_hacked_head.replace('$COL3_B$', cols['col_3'][1])
-    tab_hacked_head = tab_hacked_head.replace('$COL4_A$', cols['col_4'][0])
-    tab_hacked_head = tab_hacked_head.replace('$COL4_B$', cols['col_4'][1])
-
-    with open(in_file, 'rt', encoding=ENCODING) as handle:
-        lines = [''] + [line.rstrip() for line in handle.readlines()]
-    log.debug(f'Read {len(lines)} lines from {in_file}')
-
-    table_ranges = cue_tables(lines)
-    on_off_slots = extract_slots(table_ranges)
-
+def weave_table(lines: list[str], on_off_slots: Slots, table_ranges: TableRanges, tab_hacked_head: str) -> list[str]:
+    """Generate the output."""
     out = []
     next_slot = 0
     for n, line in enumerate(lines):
@@ -232,6 +208,39 @@ def main(options: argparse.Namespace) -> int:
             out.append(TAB_NEW_END.replace('ANNOTATION', line))
             next_slot += 1
 
+    return out
+
+
+@no_type_check
+def main(options: argparse.Namespace) -> int:
+    """Process the text."""
+    start_time = dti.datetime.utcnow()
+    verbose = options.verbose
+    if verbose:
+        logging.getLogger().setLevel(logging.DEBUG)
+    in_file, out_file = options.in_file, options.out_file
+
+    code, cfg, cp = discover_configuration(options.cfg_file)
+    if code:
+        return code
+    log.info(f'Read configiration from {cp}')
+    log.debug(f'{cfg=}')
+    cols = cfg['columns']
+    tab_hacked_head = TAB_HACKED_HEAD.replace('$COL1$', cols['col_1'][0])
+    tab_hacked_head = tab_hacked_head.replace('$COL2$', cols['col_2'][0])
+    tab_hacked_head = tab_hacked_head.replace('$COL3_A$', cols['col_3'][0])
+    tab_hacked_head = tab_hacked_head.replace('$COL3_B$', cols['col_3'][1])
+    tab_hacked_head = tab_hacked_head.replace('$COL4_A$', cols['col_4'][0])
+    tab_hacked_head = tab_hacked_head.replace('$COL4_B$', cols['col_4'][1])
+
+    with open(in_file, 'rt', encoding=ENCODING) as handle:
+        lines = [''] + [line.rstrip() for line in handle.readlines()]
+    log.debug(f'Read {len(lines)} lines from {in_file}')
+
+    table_ranges = cue_tables(lines)
+    on_off_slots = extract_slots(table_ranges)
+
+    out = weave_table(lines, on_off_slots, table_ranges, tab_hacked_head)
     with open(out_file, 'wt', encoding=ENCODING) as handle:
         handle.write('\n'.join(out) + '\n')
     log.debug(f'Wrote {len(lines)} lines to {out_file}')
