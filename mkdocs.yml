@@ -3,6 +3,9 @@ site_description: "Text area (Finnish: tekstialue) - tune planar arrangements of
 
 theme:
   name: 'material'
+  features:
+    - navigation.expand
+    - toc.integrate
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
