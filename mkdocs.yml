@@ -3,6 +3,8 @@ site_description: "Text area (Finnish: tekstialue) - tune planar arrangements of
 
 theme:
   name: 'material'
+  logo: assets/logo.png
+  favicon: images/favicon.ico
   features:
     - navigation.expand
     - toc.integrate
