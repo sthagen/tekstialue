@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/tekstialue/blob/default/sbom.json) with SHA256 checksum ([37193061 ...](https://git.sr.ht/~sthagen/tekstialue/blob/default/sbom.json.sha256 "sha256:37193061dbd58fe2871916a9d4b547ccc1e9380052b6435b68bc7fbc21ffd127")).
-<!--[[[end]]] (checksum: 73aac83e463dfc9748c5c6c2bd8df3f5)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/tekstialue/blob/default/sbom.json) with SHA256 checksum ([0a564987 ...](https://git.sr.ht/~sthagen/tekstialue/blob/default/sbom.json.sha256 "sha256:0a5649874af3b2e7c4c791223dbc98c8046cd1f40c19f6f85e03fc4df4e1d742")).
+<!--[[[end]]] (checksum: 50a6b3c47ac477eb70ccc232318be481)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
