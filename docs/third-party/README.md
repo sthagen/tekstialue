@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/tekstialue/blob/default/sbom.json) with SHA256 checksum ([0a564987 ...](https://git.sr.ht/~sthagen/tekstialue/blob/default/sbom.json.sha256 "sha256:0a5649874af3b2e7c4c791223dbc98c8046cd1f40c19f6f85e03fc4df4e1d742")).
-<!--[[[end]]] (checksum: 50a6b3c47ac477eb70ccc232318be481)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/tekstialue/blob/default/sbom/cdx.json) with SHA256 checksum ([a581c679 ...](https://git.sr.ht/~sthagen/tekstialue/blob/default/sbom/cdx.json.sha256 "sha256:a581c679d9d3652a3deaa9587ebbb8fb2b7b55f82f6e1c82e4343c5def42ab9e")).
+<!--[[[end]]] (checksum: 53691b915493d700bd1ac5d40fa1769a)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -40,6 +40,6 @@ Base graphviz file in dot format: [Trees of the direct dependencies](package-dep
 ````console
 PyYAML==6.0
 typer==0.7.0
-  - click [required: >=7.1.1,<9.0.0, installed: 8.1.3]
+└── click [required: >=7.1.1,<9.0.0, installed: 8.1.3]
 ````
-<!--[[[end]]] (checksum: fb8a9deeb3eb15f126bd258693d0e6c0)-->
+<!--[[[end]]] (checksum: ab998e1d339d7d13d4f5b5a4ba18099b)-->
