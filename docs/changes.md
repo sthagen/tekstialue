@@ -1,5 +1,4 @@
-# Change History
+# Changes
 
-## 2022.11.1
-
-* Initial release on PyPI
+2022.11.1
+:    * Initial release on PyPI
