@@ -11,6 +11,7 @@ Third party dependencies are documented in the folder [third-party](docs/third-p
 [![wheel](https://img.shields.io/pypi/wheel/tekstialue.svg?style=flat)](https://pypi.python.org/pypi/tekstialue/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/tekstialue.svg?style=flat)](https://pypi.python.org/pypi/tekstialue/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/tekstialue.svg?style=flat)](https://pypi.python.org/pypi/tekstialue/)
+[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/tekstialue.svg?style=flat)](https://git.sr.ht/~sthagen/tekstialue/log)
 
 ## Documentation
 
