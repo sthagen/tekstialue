@@ -116,7 +116,6 @@ def cue_tables(lines: list[str]) -> TableRanges:
     guess_slot = 0
     table_range = {}
     for n, text in enumerate(lines):
-
         if not table_section:
             if not text.startswith(TAB_START_TOK):
                 continue
