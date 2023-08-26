@@ -7,7 +7,7 @@ Text area (Finnish: tekstialue) - tune planar arrangements of text (tables) to p
 Third party dependencies are documented in the folder [third-party](third-party/README.md).
 
 [![version](https://img.shields.io/pypi/v/tekstialue.svg?style=flat)](https://pypi.python.org/pypi/tekstialue/)
-[![downloads](https://pepy.tech/badge/tekstialue/month)](https://pepy.tech/project/tekstialue)
+[![downloads](https://static.pepy.tech/badge/tekstialue/month)](https://pepy.tech/project/tekstialue)
 [![wheel](https://img.shields.io/pypi/wheel/tekstialue.svg?style=flat)](https://pypi.python.org/pypi/tekstialue/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/tekstialue.svg?style=flat)](https://pypi.python.org/pypi/tekstialue/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/tekstialue.svg?style=flat)](https://pypi.python.org/pypi/tekstialue/)
