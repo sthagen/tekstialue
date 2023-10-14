@@ -2,7 +2,9 @@
 
 Text area (Finnish: tekstialue) - tune planar arrangements of text (tables) to preserve styles across transforms.
 
-[License: MIT](https://git.sr.ht/~sthagen/tekstialue/tree/default/item/LICENSE)
+[License: MIT](https://git.sr.ht/~sthagen/tekstialue/tree/default/item/LICENSE) |
+[Country of origin: Switzerland](https://git.sr.ht/~sthagen/tekstialue/tree/default/item/COUNTRY-OF-ORIGIN) |
+[Export control classification number(ECCN): EAR99](https://git.sr.ht/~sthagen/tekstialue/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
 
 Third party dependencies are documented in the folder [third-party](third-party/README.md).
 
