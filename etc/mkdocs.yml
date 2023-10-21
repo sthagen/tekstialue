@@ -1,5 +1,7 @@
 site_name: Tekstialue
 site_description: "Text area (Finnish: tekstialue) - tune planar arrangements of text (tables) to preserve styles across transforms."
+docs_dir: ../docs
+site_dir: ../site
 
 theme:
   name: 'material'
