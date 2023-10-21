@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tekstialue"
-version = "2022.11.1"
+version = "2023.10.21"
 description = "Text area (Finnish: tekstialue) - tune planar arrangements of text (tables) to preserve styles across transforms."
 readme = "README.md"
 authors = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
