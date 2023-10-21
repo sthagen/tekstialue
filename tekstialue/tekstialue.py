@@ -109,6 +109,7 @@ def discover_configuration(conf: str) -> tuple[int, dict[str, object], str]:
     return 0, configuration, str(cp)
 
 
+@no_type_check
 def cue_tables(lines: list[str]) -> TableRanges:
     """Tag all tables extracting the relevant line information for elements."""
     table_section, head, annotation = False, False, False
@@ -161,6 +162,7 @@ def cue_tables(lines: list[str]) -> TableRanges:
     return table_ranges
 
 
+@no_type_check
 def extract_slots(table_ranges: TableRanges) -> Slots:
     """Extract the on and off slots for output processing."""
     on_off_slots = []
@@ -173,6 +175,7 @@ def extract_slots(table_ranges: TableRanges) -> Slots:
     return on_off_slots
 
 
+@no_type_check
 def weave_table(lines: list[str], on_off_slots: Slots, table_ranges: TableRanges, tab_hacked_head: str) -> list[str]:
     """Generate the output."""
     out = []
