@@ -9,7 +9,7 @@ Text area (Finnish: tekstialue) - tune planar arrangements of text (tables) to p
 
 [![Version](docs/badges/latest-release.svg)](https://pypi.python.org/pypi/tekstialue/)
 [![Downloads](docs/badges/downloads-per-month.svg)](https://pepy.tech/project/tekstialue)
-[![Supported Versions](https://img.shields.io/pypi/pyversions/tekstialue.svg?style=flat)](https://pypi.python.org/pypi/tekstialue/)
+[![Python](docs/badges/python-versions.svg)](https://pypi.python.org/pypi/tekstialue/)
 [![Maintenance Status](docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/tekstialue/log)
 
 ## Documentation
