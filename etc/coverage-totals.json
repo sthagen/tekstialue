@@ -1,7 +1,7 @@
 {
   "tekstialue": {
-    "version": "7.3.2",
-    "timestamp": "2023-12-02T15:36:36.285933",
+    "coverage_tool_version": "7.3.2",
+    "timestamp": "2023-12-02 16:32:51 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 166,
@@ -13,6 +13,22 @@
     "num_branches": 88,
     "num_partial_branches": 9,
     "covered_branches": 39,
-    "missing_branches": 49
+    "missing_branches": 49,
+    "node_id": "c79891e5-aabf-3a83-95b9-588edcd8327f",
+    "nfiles": 3,
+    "files": [
+      "tekstialue/__init__.py",
+      "tekstialue/cli.py",
+      "tekstialue/tekstialue.py"
+    ],
+    "blake3": "ee95a4db6fd947880cf17c7dcb2793449f517bcca169a166d307ccb708200442",
+    "blake2": "5624872623f3ee8321342177493a1033f4fe8e1c8832d13435555d7aa15ef501fdfd0713417348573f88ea2fbb04c1b4a8a57303585353759909f539a0ad99ac",
+    "sha512": "8b4605c9bc87254f1f72502310c90dd6e0f6462a1a2ee2f0d9480ee4b3294a8bcadac67378c611c484a35f00efc9f8a7e9aff6a139d1f1f9aed3248201fbbfb3",
+    "sha384": "597e8ed07b710421cd892f3877f11cc58c00b2d4bcba7e512b39d1e3b351561c2a28cda0c263ff672da8891f4711a2d3",
+    "sha256": "628b12193f71ef2d491b4c701e0629a4528b4545933fb1ab3cddb5cb14ed3c48",
+    "sha1": "0005ea99b1bea08deaa6fd02e58ef10872c3ab9d",
+    "md5": "51e092399083bb5c77071afa1f6eb075",
+    "python_version": "3.10.12",
+    "entropy": 5.019424
   }
 }
