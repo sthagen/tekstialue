@@ -1,7 +1,7 @@
 {
   "tekstialue": {
     "coverage_tool_version": "7.3.2",
-    "timestamp": "2023-12-02 17:56:59 +00:00",
+    "timestamp": "2023-12-02 20:49:38 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 166,
