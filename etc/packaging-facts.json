@@ -20,6 +20,7 @@
       "last_month": -1,
       "last_week": -1
     },
+    "dynamic": null,
     "home_page": "",
     "keywords": "developer-tools,documentation-tools,html,markdown",
     "license": "",
@@ -36,6 +37,7 @@
       "Source-Code": "https://git.sr.ht/~sthagen/tekstialue",
       "Test-Coverage": "https://codes.dilettant.life/coverage/tekstialue"
     },
+    "provides_extra": null,
     "release_url": "https://pypi.org/project/tekstialue/2023.10.21/",
     "requires_dist": [
       "PyYAML >=6.0.1",
