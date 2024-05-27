@@ -6,14 +6,9 @@
       "downloads": 9
     },
     {
-      "category": "3.8",
-      "date": "2023-11",
-      "downloads": 1
-    },
-    {
       "category": "null",
       "date": "2023-11",
-      "downloads": 4
+      "downloads": 1
     },
     {
       "category": "null",
@@ -43,7 +38,7 @@
     {
       "category": "null",
       "date": "2024-05",
-      "downloads": 18
+      "downloads": 19
     }
   ],
   "package": "tekstialue",
