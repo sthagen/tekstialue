@@ -21,6 +21,11 @@
       "downloads": 2
     },
     {
+      "category": "3.10",
+      "date": "2025-02",
+      "downloads": 1
+    },
+    {
       "category": "3.12",
       "date": "2024-08",
       "downloads": 2
@@ -48,7 +53,7 @@
     {
       "category": "null",
       "date": "2024-08",
-      "downloads": 17
+      "downloads": 16
     },
     {
       "category": "null",
@@ -78,7 +83,7 @@
     {
       "category": "null",
       "date": "2025-02",
-      "downloads": 23
+      "downloads": 24
     }
   ],
   "package": "tekstialue",
