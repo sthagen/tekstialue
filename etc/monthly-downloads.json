@@ -16,8 +16,18 @@
       "downloads": 1
     },
     {
+      "category": "3.11",
+      "date": "2025-06",
+      "downloads": 2
+    },
+    {
       "category": "3.12",
       "date": "2025-05",
+      "downloads": 2
+    },
+    {
+      "category": "3.12",
+      "date": "2025-06",
       "downloads": 2
     },
     {
@@ -27,13 +37,8 @@
     },
     {
       "category": "null",
-      "date": "2024-11",
-      "downloads": 2
-    },
-    {
-      "category": "null",
       "date": "2024-12",
-      "downloads": 40
+      "downloads": 33
     },
     {
       "category": "null",
@@ -59,6 +64,11 @@
       "category": "null",
       "date": "2025-05",
       "downloads": 11
+    },
+    {
+      "category": "null",
+      "date": "2025-06",
+      "downloads": 3
     }
   ],
   "package": "tekstialue",
